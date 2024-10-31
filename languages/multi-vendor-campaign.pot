@@ -1,0 +1,32 @@
+# Copyright (C) 2021 Rado-studio
+# This file is distributed under the same license as the Multi Vendor Campaign plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Multi Vendor Campaign 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/multi-vendor-multi-vendor-campaign\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-04-21T08:42:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: multi-vendor-campaign\n"
+
+#. Plugin Name of the plugin
+msgid "Multi Vendor Campaign"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "http://Rado-studio.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Earn more money by creating campaigns to allow vendors display their products on specific areas of your store."
+msgstr ""
+
+#. Author of the plugin
+msgid "Rado-studio"
+msgstr ""

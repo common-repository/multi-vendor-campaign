@@ -1,0 +1,368 @@
+.rad-mvc-campaigns-list {
+    margin: 20px 15px;
+    height: auto;
+    display: block;
+}
+
+.rad-mvc-campaigns-list .campaign-item {
+    display:inline-block;
+    position:relative;
+    background:#fff;
+    width: 49%;
+    box-shadow: 0px 4px 12px #ccc;
+    margin: 0 1% 20px 0;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.rad-mvc-campaigns-list .campaign-item .title {
+    padding: 20px 0 0 20px;
+}
+
+.rad-mvc-campaigns-list .campaign-item .description {
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.rad-mvc-campaigns-list .campaign-item-header {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    color:#fff;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding-top: 40%;
+    margin: 10px 20px;
+}
+
+.rad-mvc-campaigns-list .campaign-item-detail {
+    line-height:1.2em;
+    padding:20px;
+}
+
+.rad-mvc-campaigns-list p,
+.rad-mvc-campaigns-list .number-of-vendor-products,
+.rad-mvc-campaigns-list .campaign-position,
+.rad-mvc-campaigns-list .campaign-subscription {
+    font-size: 15px;
+}
+
+.rad-mvc-campaigns-list .rad-mvc-campaign-message {
+    line-height:1.5em;
+    padding:2px 20px;
+    color:#ff005a;
+    font-size: 14px;
+}
+
+.rad-mvc-campaigns-list .rad-mvc-campaign-message .dashicons {
+    line-height: 18px;
+    vertical-align: sub;
+    margin-right: 6px;
+}
+
+.rad-mvc-campaigns-list .campaign-item-detail > div {
+    margin-bottom:8px;
+}
+
+.rad-mvc-campaigns-list .products-input-container {
+    padding: 20px;
+    position: relative;
+}
+
+.rad-mvc-campaigns-list .products-input-container p {
+    font-size: 15px;
+}
+
+.rad-mvc-campaigns-list .campaign-item .loading {
+    width:50px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+}
+
+.loading > span {
+    width: 7px;
+    height: 7px;
+    background-color: #d8d8d8;
+    border-radius: 17px;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.loading .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loading .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.rad-mvc-campaigns-list .products-input-container .loading {
+    right: 22px;
+    top: 49px;
+}
+
+.rad-mvc-campaigns-list .campaign-item .showloading .loading,
+.rad-mvc-campaigns-list .products-input-container.searching .loading {
+    display: block;
+}
+
+.rad-mvc-campaigns-list .button_subscribe_campaign.showloading {
+    color: transparent;
+}
+
+.rad-mvc-campaigns-list .button_subscribe_campaign .loading {
+    width: 80%;
+    right: 10%;
+    top: 5px;
+}
+
+.rad-mvc-campaigns-list .button_subscribe_campaign .loading > span {
+    background: #fff;
+}
+
+.rad-mvc-campaigns-list .products-input-container input {
+    width:100%;
+    width: 100%;
+    height: 39px;
+    box-shadow: none;
+    font-size:12px;
+    margin-top: 5px;
+    background: #fcfcfc;
+    border: 1px solid #eee;
+}
+
+.rad-mvc-campaigns-list .products-input-container input:focus {
+    outline: none;
+}
+
+.rad-mvc-campaigns-list .product-search-result {
+    position: absolute;
+    margin: 0;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 3px 3px #ccc;
+    max-height: 106px;
+    overflow: scroll;
+    z-index: 22;
+}
+
+.rad-mvc-campaigns-list .product-search-result li {
+    padding:10px 10px 10px 10px;
+    font-weight: 500;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.rad-mvc-campaigns-list .product-search-result li .status,
+.rad-mvc-campaigns-list .product-search-result li .img {
+    display: none;
+}
+
+.rad-mvc-campaigns-list .selected-items li .remove {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    display: block;
+    top: 2px;
+}
+
+.rad-mvc-campaigns-list .selected-items li .remove:after,
+.rad-mvc-campaigns-list .selected-items li .remove:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background: red;
+    top: 14px;
+    left: 5px;
+    transform: rotate(45deg);
+}
+
+.rad-mvc-campaigns-list .selected-items li .remove:after {
+    transform:rotate(135deg);
+}
+
+.rad-mvc-campaigns-list .selected-items {
+    padding:10px 20px 0;
+    margin-top:0;
+    position: relative;
+}
+
+.rad-mvc-campaigns-list .selected-items:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 0;
+    height: 1px;
+    background: #f5f5f5;
+}
+
+.rad-mvc-campaigns-list .products_heading {
+    padding: 4px 20px;
+    
+}
+
+.rad-mvc-campaigns-list .products_heading *{
+    font-size: 14px;
+}
+
+.rad-mvc-campaigns-list .products_heading .status {
+    float:right;
+}
+
+.rad-mvc-campaigns-list .selected-items li {
+    padding: 0px 100px 0px 0;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    min-height: 35px;
+    line-height: 28px;
+}
+
+.rad-mvc-campaigns-list .selected-items .img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    top:0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    display: none;
+}
+
+.rad-mvc-campaigns-list .selected-items .img img {
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:.5;
+}
+
+.rad-mvc-campaigns-list .selected-items .status {
+    position: absolute;
+    right: 35px;
+    top:0;
+    padding-top: 0;
+    width: 50px;
+}
+
+.rad-mvc-campaigns-list .selected-items .newitem .status {
+    display: none;
+}
+
+.rad-mvc-campaigns-list .selected-items .status > * {
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: 100;
+    position: absolute;
+    display: none;
+    line-height: 16px;
+    padding: 1px 5px;
+    border-radius: 4px;
+}
+
+.rad-mvc-campaigns-list .selected-items .status .approved {
+    background: #44cb70;
+}
+
+.rad-mvc-campaigns-list .selected-items .status .pending {
+    background: #737373;
+}
+
+.rad-mvc-campaigns-list .selected-items .status .rejected {
+    background: #ffb565;
+}
+
+.rad-mvc-campaigns-list .selected-items .status.isloading .loading,
+.rad-mvc-campaigns-list .selected-items .status.rejected .rejected,
+.rad-mvc-campaigns-list .selected-items .status.pending .pending,
+.rad-mvc-campaigns-list .selected-items .status.approved .approved {
+    display: block;
+}
+
+.rad-mvc-campaigns-list .selected-items .status.isloading .rejected,
+.rad-mvc-campaigns-list .selected-items .status.isloading .pending,
+.rad-mvc-campaigns-list .selected-items .status.isloading .approved {
+    display: none;
+}
+
+
+.rad-mvc-campaigns-list .button_subscribe_campaign {
+    display: table;
+    padding: 8px 50px;
+    margin: 0px auto 34px auto;
+    position: relative;
+    line-height: 20px;
+    border: 1px solid #30cb98;
+    color: #30cb98;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color .3s ease, color .25s ease;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.rad-mvc-campaigns-list .button_subscribe_campaign:hover {
+    border-color: #2abb8b;
+}
+
+.rad-mvc-campaigns-list .button_subscribe_campaign.disable:hover,
+.rad-mvc-campaigns-list .button_subscribe_campaign.disable {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.dokan-dashboard-menu .campaigns .update-plugins {
+    margin: 2px 5px;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    padding: 3px;
+    font-size: 11px;
+    min-width: 22px;
+    min-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
